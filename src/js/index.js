@@ -25,7 +25,7 @@ import "../style/index.scss";
 function render(variables = {}) {
   console.log("These are the current variables: ", variables); //print on the console
   // here we ask the logical questions to make decisions on how to build the html
-  // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
+  // .if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
